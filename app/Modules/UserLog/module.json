@@ -1,0 +1,14 @@
+{
+    "name": "UserLog",
+    "alias": "userlog",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\UserLog\\Providers\\UserLogServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

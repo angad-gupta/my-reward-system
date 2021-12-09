@@ -1,0 +1,333 @@
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  transition: .4s;
+  height: 25px;
+  width: 50px;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 20px;
+  position: absolute;
+  transition: .4s;
+  width: 20px;
+  top: 2px;
+  left: 2px;
+}
+
+input:checked+.slider {
+  background-color: #66bb6a;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body {
+  background-color: #f1f2f3;
+}
+
+.color-radio label {
+  position: relative;
+  padding: 0;
+  width: 36px !important;
+  height: 36px !important;
+  overflow: hidden !important;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.color-radio label span {
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.color-radio input[type="radio"],
+.color-radio input[type="radio"]:after,
+.color-radio input[type="radio"]:checked,
+.color-radio input[type="radio"]:checked:after {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.new-border {
+  /* border:1px solid #fff; */
+  /* outline:1px solid #242a39; */
+}
+
+.new-border:before {
+  content: '\f00c';
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  color: #fff;
+  font-family: fontAwesome;
+  z-index: 1111;
+}
+
+.accordion .card-header:after {
+  content: "\f106";
+  float: right;
+  color: #000;
+  font-family: fontawesome;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.accordion .card-header.collapsed:after {
+  content: "\f107";
+  color: #000;
+  font-family: fontawesome;
+  font-weight: 600;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.card-header .title {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.card-header .accicon {
+  float: right;
+  font-size: 20px;
+  width: 1.2em;
+}
+
+.card-header {
+  cursor: pointer;
+  border-bottom: none;
+  background: #fff
+}
+
+.card {
+  margin-bottom: 15px;
+  border: 0;
+  padding: 5px 0;
+  border-radius: 4px;
+}
+
+.card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+
+.card a {
+  color: #1FD2CC;
+}
+
+.btn-dark {
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-dark:hover {
+  color: #b61616;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-dark.focus,
+.btn-dark:focus {
+  color: #000;
+  background-color:transparent;
+  border-color: transparent;
+  box-shadow: none;
+  outline:0
+}
+
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
+  color: #000;
+  background-color: transparent;
+  border-color: transparent;
+  outline:0
+}
+
+/*#qty_input {*/
+  /*height: calc(1.5em + .5rem + 2px);*/
+  /*padding: 9px;*/
+  /*font-size: 1rem;*/
+  /*line-height: 1.5;*/
+  /*border-radius: .2rem;*/
+  /*text-align: center;*/
+  /*background: transparent;*/
+  /*border: 0;*/
+  /*margin: auto;*/
+  /*display: block;*/
+/*}*/
+
+.input-group-prepend{
+  z-index: 0;
+}
+
+
+/* This css is for normalizing styles. You can skip this. */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.ecm-filter .form-group {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.ecm-filter .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.ecm-filter .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.ecm-filter .form-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #000;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.ecm-filter .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 6px;
+  height: 14px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.card-header .title {
+  font-size: 17px;
+  color: #000;
+}
+.card-header .accicon {
+float: right;
+font-size: 20px;  
+width: 1.2em;
+}
+.card-header{
+cursor: pointer;
+border-bottom: none;
+background: #f5f5f5;
+padding-bottom: 10px !important;
+}
+.card{
+border: 0;
+padding: 0;
+margin-bottom: 0;
+border: 1px solid #e8e8e8;
+}
+.card-body{
+background:#fff;
+padding: 15px;
+}
+
+.card-header:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
+.accordion>.card>.card-header {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+}
+
+.accordion .card-header.collapsed:after {
+  content: "\f067";
+  color: #525050;
+  font-family: fontawesome;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.accordion .card-header:after {
+  content: "\f068";
+  float: right;
+  color: #525050;
+  font-family: fontawesome;
+  font-weight: 600;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+}
+
+.accordion h6{
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.accordion>.card:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 1px solid #e8e8e8;
+}
+
+.ecm-ribbon {
+  margin-bottom: 30px;
+}
