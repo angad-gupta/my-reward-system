@@ -58,7 +58,8 @@
 							        {{-- <img src="{{asset('home/images/logo.png')}}" alt="" width="50%" height="50%"> --}}
 									<h5 class="mb-0 mt-2">Login to <b class="text-pink">Reward System</b></h5>
 									<!-- <span class="d-block text-muted">Your credentials</span> -->
-									<h6>Username and Password : admin@gmail.com</h4>
+									<h6>Username : admin@gmail.com</h4>
+									<h6>Password : admin@gmail.com</h4>
 								</div>
                                 @include('flash::message')
 

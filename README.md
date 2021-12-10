@@ -51,9 +51,9 @@ php artisan serve
 ```
 
 
+Note : Admin Login
 
 ```bash
-Note : Admin Login
 Username : admin@gmail.com
 Password : admin@gmail.com
 ```
