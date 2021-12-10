@@ -1,20 +1,4 @@
 
-Steps to install project
-
-1. clone it
-2. composer install
-3. php artisan module:migrate
-4. php artisan module:seed
-5. php artisan serve
-
-
-Note: 
-
-Admin 
-Username : admin@gmail.com
-Password : admin@gmail.com
-
-
 ## My Reward System
 
 This is reward system where customers place order and get their reward credit points to their purchase. It has a feature with support of multi currency purchase. Its is developed in PHP Laravel Framework 7.2.5.
@@ -68,16 +52,23 @@ php artisan serve
 
 
 
+```bash
+Note : Admin Login
+Username : admin@gmail.com
+Password : admin@gmail.com
+```
+
+
 ## Screenshots
 
 #### Customers Page:
-![Test Image 1](https://github.com/angad-gupta/my-reward-system/blob/master/currency.png)
+![Test Image 1](https://github.com/angad-gupta/my-reward-system/blob/main/currency.png)
 
 #### Customers Page:
-![Test Image 2](https://github.com/angad-gupta/my-reward-system/blob/master/customer.png)
+![Test Image 2](https://github.com/angad-gupta/my-reward-system/blob/main/customer.png)
 
 #### Orders Page:
-![Test Image 3](https://github.com/angad-gupta/my-reward-system/blob/master/order.png)
+![Test Image 3](https://github.com/angad-gupta/my-reward-system/blob/main/order.png)
 
 #### Rewards Page:
-![Test Image 4](https://github.com/angad-gupta/my-reward-system/blob/master/reward.png)
+![Test Image 4](https://github.com/angad-gupta/my-reward-system/blob/main/reward.png)
