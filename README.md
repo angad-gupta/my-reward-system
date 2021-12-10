@@ -1,6 +1,8 @@
-# my-reward-system
+My Reward System
+Its is reward system where customers place order and get their reward credit points to their purchase. It has a feature with support of multi currency purchase.
+Its is developed in PHP Laravel Framework 7.2.5.
 
-Steps to install project
+#Steps to install project
 
 1. clone it
 2. composer install
@@ -9,4 +11,8 @@ Steps to install project
 5. php artisan serve
 
 
-Note: Admin Username and Password is admin@gmail.com
+Note: 
+
+Admin 
+Username : admin@gmail.com
+Password : admin@gmail.com
