@@ -61,7 +61,7 @@ Password : admin@gmail.com
 
 ## Screenshots
 
-#### Customers Page:
+#### Currency Page:
 ![Test Image 1](https://github.com/angad-gupta/my-reward-system/blob/main/currency.png)
 
 #### Customers Page:
