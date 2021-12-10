@@ -13,26 +13,7 @@ Run composer install.
 composer install
 ```
 
-Change .env.example to .env and set the database configs.
-
-For Windows
-
-```
-DB_DATABASE=my_reward_system
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
-For MAC (MAMP)
-
-```
-DB_DATABASE=my_reward_system
-DB_USERNAME=root
-DB_PASSWORD=root
-DB_SOCKET=/Applications/MAMP/tmp/mysql/mysql.sock  //path to mysql socket
-```
-
-Do migration and seed.
+Migration and seed.
 
 Migrate:
 ```bash
